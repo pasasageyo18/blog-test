@@ -119,11 +119,19 @@ function ListUsers() {
                 userList.length > 0 &&
                 userList.map((user: any) => (
                   <TableRow key={user.id}>
-                    <TableCell className="text-white">{user.id}</TableCell>
-                    <TableCell className="text-white">{user.name}</TableCell>
-                    <TableCell className="text-white">{user.gender}</TableCell>
-                    <TableCell className="text-white">{user.status}</TableCell>
-                    <TableCell className="flex">
+                    <TableCell className="text-white text-center">
+                      {user.id}
+                    </TableCell>
+                    <TableCell className="text-white text-center">
+                      {user.name}
+                    </TableCell>
+                    <TableCell className="text-white text-center">
+                      {user.gender}
+                    </TableCell>
+                    <TableCell className="text-white text-center">
+                      {user.status}
+                    </TableCell>
+                    <TableCell className="flex justify-center">
                       <div className="flex">
                         <Button
                           variant="link"

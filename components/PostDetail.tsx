@@ -91,7 +91,7 @@ function PostDetail({ postId }: { postId: string }) {
               <CardHeader className="flex flex-row gap-6 items-center">
                 <Avatar>
                   <AvatarFallback>
-                    {(user as any).name?.split("", 2).join("")}
+                    {(user as any).name?.split("", 2).join("").toUpperCase()}
                   </AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col gap-2">
@@ -136,7 +136,10 @@ function PostDetail({ postId }: { postId: string }) {
                   <CardHeader className="flex flex-row gap-6 items-center">
                     <Avatar>
                       <AvatarFallback>
-                        {(comment as any).name.split("", 2).join("")}
+                        {(comment as any).name
+                          .split("", 2)
+                          .join("")
+                          .toUpperCase()}
                       </AvatarFallback>
                     </Avatar>
                     <div className="flex flex-col gap-2">

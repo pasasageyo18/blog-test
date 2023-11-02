@@ -104,7 +104,7 @@ function FormEditUser({ userId }: { userId: string }) {
           {user ? (
             <>
               <div className="gap-6 mb-6 flex">
-                <div className="grid w-full max-w-sm items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5">
                   <Label htmlFor="name" className="text-white">
                     Name
                   </Label>
@@ -116,7 +116,7 @@ function FormEditUser({ userId }: { userId: string }) {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-                <div className="grid w-full max-w-sm items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5">
                   <Label htmlFor="email" className="text-white">
                     Email
                   </Label>
@@ -130,7 +130,7 @@ function FormEditUser({ userId }: { userId: string }) {
                 </div>
               </div>
               <div className="gap-6 mb-6 flex">
-                <div className="grid w-full max-w-sm items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5">
                   <Label htmlFor="name" className="text-white">
                     Gender
                   </Label>
@@ -166,7 +166,7 @@ function FormEditUser({ userId }: { userId: string }) {
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </div>
-                <div className="grid w-full max-w-sm items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5">
                   <Label htmlFor="name" className="text-white">
                     Status
                   </Label>

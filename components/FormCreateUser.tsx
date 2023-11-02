@@ -70,7 +70,7 @@ function FormCreateUser() {
       <p className="text-white text-4xl font-bold">Edit Post</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <div className="gap-6 mb-6 flex">
-          <div className="grid w-full max-w-sm items-center gap-1.5">
+          <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="name" className="text-white">
               Name
             </Label>
@@ -83,7 +83,7 @@ function FormCreateUser() {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
+          <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="email" className="text-white">
               Email
             </Label>
@@ -98,7 +98,7 @@ function FormCreateUser() {
           </div>
         </div>
         <div className="gap-6 mb-6 flex">
-          <div className="grid w-full max-w-sm items-center gap-1.5">
+          <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="name" className="text-white">
               Gender
             </Label>
@@ -134,7 +134,7 @@ function FormCreateUser() {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
+          <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="name" className="text-white">
               Status
             </Label>
