@@ -17,7 +17,6 @@ function PostDetail({ postId }: { postId: string }) {
   const [post, setPost] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [comment, setComment] = useState();
-  const [isError, setIsError] = useState();
 
   const token =
     "f52b8ce702b7fd8607dec738ded396879210a5536a3ef20567e00f02f859e81c";

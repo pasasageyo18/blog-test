@@ -67,9 +67,9 @@ function FormCreateUser() {
           Create
         </Link>
       </div>
-      <p className="text-white text-4xl font-bold">Edit Post</p>
+      <p className="text-white text-4xl font-bold">Create User</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <div className="gap-6 mb-6 flex">
+        <div className="gap-6 mb-6 flex max-md:flex-col">
           <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="name" className="text-white">
               Name

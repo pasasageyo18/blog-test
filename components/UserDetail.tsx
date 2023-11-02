@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 const token =
   "f52b8ce702b7fd8607dec738ded396879210a5536a3ef20567e00f02f859e81c";
@@ -8,6 +10,8 @@ const token =
 function UserDetail({ userId }: { userId: string }) {
   const [userSpecific, setUserSpecific] = useState();
   const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     setIsLoading(true);
@@ -33,6 +37,10 @@ function UserDetail({ userId }: { userId: string }) {
     retrieveSpecificUser();
   }, [userId]);
 
+  const handleRouteEdit = (id: any) => {
+    router.push(`${id}/edit`);
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <div className="flex gap-2">
@@ -44,7 +52,15 @@ function UserDetail({ userId }: { userId: string }) {
           View
         </Link>
       </div>
-      <p className="text-white text-4xl font-bold">Detail User</p>
+      <div className="flex justify-between">
+        <p className="text-white text-4xl font-bold">Detail User</p>
+        <Button
+          className="bg-white text-black hover:text-white"
+          onClick={() => handleRouteEdit((userSpecific as any).id)}
+        >
+          Edit User
+        </Button>
+      </div>
       {isLoading ? (
         <p className="text-white">Loading...</p>
       ) : (
